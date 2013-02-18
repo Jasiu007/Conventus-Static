@@ -1,0 +1,75 @@
+
+
+ol
+{
+	list-style: none;
+}
+
+ol li 
+{
+	background-color: #E0E0E0;
+	margin-bottom: 40px;
+	border: 1px solid white;
+	border-radius: 2px;
+	box-shadow: 0 1px 5px #7C7C7C;
+}
+
+section.head 
+{
+	background-color: #C9C9C9;
+	padding: 10px;
+	border-bottom: 1px solid #595959;
+	-webkit-transition: border 0.5s;
+}
+
+section.head:hover
+{
+	cursor: pointer;
+}
+
+
+section.head span.avatar
+{
+	float: left;
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	border-radius: 5px;
+	margin-right: 10px;
+	box-shadow: 1px 1px 2px #797979;
+}
+
+section.head p.name
+{
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+section.head p.location
+{
+	font-size: 11pt;
+	float: right;
+	margin-top: -40px;
+	opacity: 0.5;
+}
+
+section.head p.rating
+{
+	float: right;
+	color: #222;
+	margin-top: -20px;
+	opacity: 0.9;
+}
+
+section.head p.skills
+{
+	font-size: 10pt;
+}
+
+section.body p 
+{
+	font-size: 10pt;
+	padding: 10px;
+	border-top: 1px solid white;
+	opacity: 0.6;
+}

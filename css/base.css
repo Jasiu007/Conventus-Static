@@ -1,0 +1,372 @@
+/* General Styles */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,300,600);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
+*
+{
+	margin: 0;
+	padding: 0;
+	font-size: 11pt;
+	font-family: 'Open Sans', Arial, Sans-Serif;
+	font-weight: 300;
+}
+
+body 
+{
+	background-color: #efefef;
+}
+
+/* -------------------------- */
+
+/* Login Page Styles */
+
+/* -------------------------- */
+
+/* Heading Styles */
+
+h2
+{
+	text-align: left;
+	width: 100%;
+	margin: 0 auto;
+	font-size: 25pt;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #c6c6c6;
+}
+
+h1
+{
+	font-family: 'Open Sans Condensed', Arial, Sans-Serif;
+	float: left;
+	font-size: 20pt;
+	margin-top: 10px;
+	font-weight: bold;
+	color: white;
+}
+
+/* Containers Styles */
+
+section#container
+{
+	
+	width: 900px;
+	margin: 0 auto;
+	padding-top: 50px;
+	position: relative;
+}
+
+section#topContainer
+{
+	width: 900px;
+	margin: 0 auto;
+}
+
+section#bottomContainer
+{
+	width: 218px;
+	margin: 0 auto;
+}
+
+/* Sections Styles */
+
+header
+{
+	height: 60px;
+	background-color: #222;
+	border-bottom: 1px solid #fff;
+}
+
+footer
+{
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	background-color: #BFBFBF;
+	border-top: 1px solid #999;
+}
+
+footer p 
+{
+	font-size: 8pt;
+	float: left;
+	padding-top: 10px;
+}
+
+/* FORM Styles */
+
+form
+{
+	width: 429px;
+	margin: 0 auto;
+	border: none;
+	padding-top: 40px;
+}
+
+::-webkit-input-placeholder {
+   color: #c6c6c6;
+}
+
+:-moz-placeholder {  
+   color: #c6c6c6;  
+}
+
+input
+{
+	width: 408px;
+	margin-bottom: 5px;
+    border: 1px solid #c6c6c6;
+	padding: 10px;
+	outline: none;
+	color: #777;
+}
+
+input.error
+{
+	border: 1px solid #aa3333;
+}
+
+input:focus, div.wrapper:focus
+{
+	border: 1px solid rgba(81, 203, 238, 1);
+	box-shadow: 0 0 3px rgba(81, 203, 238, 1);
+}
+
+input.error:focus
+{
+	box-shadow: 0 0 3px #FF3019;
+	border: 1px solid #BC3838;
+}
+
+fieldset.first
+{
+	padding-top: 20px;
+	border: none;
+	border-top: 1px solid white;
+}
+
+fieldset
+{
+	border: none;
+	padding-top: 15px;
+}
+
+label
+{
+	display: block;
+	padding-bottom: 5px;
+}
+
+#signBtn, #searchBtn
+{
+	width: 100px;
+	float: right;
+	font-size: 10pt;
+	font-weight: bold;
+	cursor: pointer;
+	border: 1px solid #c6c6c6;
+	box-shadow: 0 1px 2px #c1c1c1;
+	color: #222;
+
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+
+}
+
+#signBtn:active, #searchBtn:active
+{
+	box-shadow: inset 1px 1px 1px #c6c6c6;
+}
+
+p.error
+{
+	font-size: 8pt;
+	color: white;
+	background-color: #aa3333;
+	padding: 10px;
+	margin-top: 5px;
+}
+
+/* Links Styles */
+
+#register, #signIn
+{
+	float: right;
+	padding: 5px;
+	margin: 10px 5px 0 5px;
+	text-decoration: none;
+	line-height: 30px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	font-size: 10pt;
+	font-weight: bold;
+	-webkit-transition:color 0.3s ease-in;
+}
+
+#register:hover, #signIn:hover
+{
+	color: #ff920a;
+}
+
+#register
+{
+	color: #91e842;
+}
+
+/* -------------------------- */
+
+/* Register Form Styles */
+
+/* -------------------------- */
+
+form#registerClient
+{
+	float:left;
+	border-color: #999; 
+	padding-right: 20px;
+	border-right: 1px solid #c6c6c6;
+}
+
+form#registerDev
+{
+	padding-left: 20px;
+	float: left;
+	border-left: 1px solid white;
+}
+
+#clientBtn, #devBtn
+{
+	width: 100px;
+	float: right;
+	font-size: 10pt;
+	font-weight: bold;
+	cursor: pointer;
+	border: 1px solid #c6c6c6;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px #c1c1c1;
+	color: #222;
+
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+
+}
+
+#clientBtn:active, #devBtn:active
+{
+	box-shadow: inset 1px 1px 1px #c6c6c6;
+}
+
+/* -------------------------- */
+
+/* Login Page Styles */
+
+/* -------------------------- */
+
+p#welcome
+{
+	text-align: center;
+	font-size: 20pt;
+}
+
+p#welcomeMessage
+{
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+/* -------------------------- */
+
+/* Dropdown Styles */
+
+/* -------------------------- */
+
+.wrapper {
+    /* Size and position */
+    position: relative; /* Enable absolute positioning for children and pseudo elements */
+    width: 408px;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: #c6c6c6;
+ 
+    /* Styles */
+    background: #fff;
+    border: 1px solid #c6c6c6;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Arrow */
+.wrapper:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #c6c6c6 transparent;
+}
+
+.wrapper .dropdown {
+  /* Size & position */
+    width: 428px;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    left: -1px;
+    border-bottom: 1px solid rgba(81, 203, 238, 1);
+    border-left: 1px solid rgba(81, 203, 238, 1);
+    border-right: 1px solid rgba(81, 203, 238, 1);
+ 
+    /* Styles */
+    background: white;
+    transition: all 0.3s ease-out;
+    list-style: none;
+ 
+    /* Hiding */
+    opacity: 0;
+    pointer-events: none;
+}
+
+.wrapper .dropdown li a {
+    display: block;
+    text-decoration: none;
+    color: #c6c6c6;
+    padding: 10px;
+    transition: all 0.3s ease-out;
+}
+ 
+.wrapper .dropdown li:nth-child(1) a { 
+    border-bottom: 1px solid #EDEDED;
+    border-top: 1px solid #EDEDED;
+}
+ 
+/* Hover state */
+ 
+.wrapper .dropdown li:hover a {
+    color: #777;
+}
+ 
+.wrapper.active .dropdown {
+    opacity: 1;
+    pointer-events: auto;
+}
+
