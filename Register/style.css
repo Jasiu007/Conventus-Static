@@ -17,24 +17,6 @@ body
 	background-color: #efefef;
 }
 
-@font-face {
-    font-family: 'WebSymbolsRegular';
-    src: url('../fonts/WebSymbols-Regular-webfont.eot');
-    src: url('../fonts/WebSymbols-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/WebSymbols-Regular-webfont.woff') format('woff'),
-         url('../fonts/WebSymbols-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/WebSymbols-Regular-webfont.svg#WebSymbolsRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-/* -------------------------- */
-
-/* Login Page Styles */
-
-/* -------------------------- */
-
 /* Heading Styles */
 
 h2
@@ -49,23 +31,23 @@ h2
 
 h1
 {
-	font-family: 'Open Sans Condensed', Arial, Sans-Serif;
 	float: left;
 	font-size: 20pt;
 	margin-top: 10px;
 	font-weight: bold;
 	color: white;
+	font-family: 'Open Sans Condensed', Arial, Sans-Serif;
 }
 
-/* Container Styles */
+/* Containers Styles */
 
 section#container
 {
 	
 	width: 900px;
-	position: relative;
 	margin: 0 auto;
 	padding-top: 50px;
+	position: relative;
 }
 
 section#topContainer
@@ -101,17 +83,6 @@ footer
 	border-top: 1px solid #999;
 }
 
-footer#sticky
-{
-	width: 100%;
-	height: 40px;
-	position: relative;
-	text-align: center;
-	background-color: #BFBFBF;
-	border-top: 1px solid #999;
-	margin-top: 50px;
-}
-
 footer p 
 {
 	font-size: 8pt;
@@ -126,7 +97,6 @@ form
 	width: 429px;
 	margin: 0 auto;
 	border: none;
-	padding-top: 40px;
 }
 
 ::-webkit-input-placeholder {
@@ -137,19 +107,44 @@ form
    color: #c6c6c6;  
 }
 
+form#registerClient
+{
+	float:left;
+	border-color: #999; 
+	padding-right: 20px;
+	border-right: 1px solid #c6c6c6;
+}
+
+form#registerDev
+{
+	padding-left: 20px;
+	float: left;
+	border-left: 1px solid white;
+}
+
 input
 {
 	width: 408px;
 	margin-bottom: 5px;
-    border: 1px solid #c6c6c6;
+	border: 1px solid #c6c6c6;
 	padding: 10px;
 	outline: none;
 	color: #777;
+
+	-webkit-transition: border 0.30s ease-in-out;
+	-moz-transition: border 0.30s ease-in-out;
+	-ms-transition: border 0.30s ease-in-out;
+	-o-transition: border 0.30s ease-in-out;
 }
 
 input.error
 {
 	border: 1px solid #aa3333;
+
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
 }
 
 input:focus, div.wrapper:focus
@@ -183,46 +178,42 @@ label
 	padding-bottom: 5px;
 }
 
-#signBtn, #searchBtn, #clientBtn, #devBtn
+
+#clientBtn, #devBtn
 {
-	width: 120px;
+	width: 100px;
 	float: right;
-	position: relative;
 	font-size: 10pt;
 	font-weight: bold;
 	cursor: pointer;
+	border: 1px solid #c6c6c6;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px #c1c1c1;
 	color: #222;
 
-	background-color: #91e842;
-	background: -moz-linear-gradient(top, #91e842, #6AA830 50%, #63A02E 50%, #5D992C);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #91e842), color-stop(.5, #6AA830), color-stop(.5, #63A02E), to(#5D992C));
-
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border: 1px solid #A5F747;
-	border-top: 1px solid white;
-
-	box-shadow: 0 1px 1px black;
-	-webkit-box-shadow: 0 1px 1px black;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
 
 }
 
-p.error
+#clientBtn:active, #devBtn:active
 {
-	font-size: 8pt;
-	color: white;
-	background-color: #aa3333;
-	padding: 10px;
-	margin-top: 5px;
+	box-shadow: inset 1px 1px 1px #c6c6c6;
 }
 
 /* Links Styles */
 
-a#register, a#signIn
+#register, #signIn
 {
-	display: block;
 	float: right;
-	margin: 15px 0px 0 0px;
+	padding: 5px;
+	margin: 10px 5px 0 5px;
 	text-decoration: none;
 	line-height: 30px;
 	border: none;
@@ -233,59 +224,14 @@ a#register, a#signIn
 	-webkit-transition:color 0.3s ease-in;
 }
 
-a#signIn
+#register:hover, #signIn:hover
 {
-	padding-right: 10px;
+	color: #ff920a;
 }
 
-a#register
+#register
 {
 	color: #91e842;
-	border-left: 1px solid #333;
-	padding-left: 10px;
-}
-
-/* -------------------------- */
-
-/* Register Form Styles */
-
-/* -------------------------- */
-
-form#registerClient
-{
-	position: relative;
-	margin-left: 0;
-	border-color: #999; 
-	padding-right: 20px;
-	border-right: 1px solid #c6c6c6;
-}
-
-form#registerDev
-{
-	padding-left: 20px;
-	position: absolute;
-	top: 50px;
-	right: 0;
-	border-left: 1px solid white;
-}
-
-/* -------------------------- */
-
-/* Login Page Styles */
-
-/* -------------------------- */
-
-p#welcome
-{
-	text-align: center;
-	font-size: 20pt;
-}
-
-p#welcomeMessage
-{
-	text-align: center;
-	padding-top: 5px;
-	padding-bottom: 10px;
 }
 
 /* -------------------------- */
@@ -367,4 +313,7 @@ p#welcomeMessage
     opacity: 1;
     pointer-events: auto;
 }
+
+
+
 
