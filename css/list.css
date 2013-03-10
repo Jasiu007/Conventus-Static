@@ -1,3 +1,10 @@
+/* -------------------------- */
+
+/* Results Page Styles */
+
+/* -------------------------- */
+
+/* List Styles */
 
 ol
 {
@@ -12,9 +19,10 @@ ol li
 	margin-bottom: 40px;
 	border: 1px solid #EDEDED;
 	border-top: 1px solid white;
-	border-radius: 10px;
 	box-shadow: 0 1px 3px #7C7C7C;
 }
+
+/* Link Styles */
 
 a.head
 {
@@ -25,8 +33,6 @@ a.head
 	border-bottom: 1px solid #595959;
 	text-decoration: none;
 	color: #222;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
 } 
 
 a.head:hover
@@ -72,6 +78,8 @@ a.head p.skills
 	font-size: 9pt;
 	margin: 2px;
 }
+
+/* Content Styles */
 
 section.body p 
 {
